@@ -1,11 +1,60 @@
-local colors = require('bamboo.palette')
+return {
+  contrast = '#111210',
+  inverse = '#ffffff',
+  bg0 = '#252623',
+  bg1 = '#2f312c',
+  bg2 = '#383b35',
+  bg3 = '#3a3d37',
+  bg_d = '#1c1e1b',
+  bg_blue = '#68aee8',
+  bg_yellow = '#e2c792',
+  fg = '#f1e9d2',
+  purple = '#aaaaff',
+  bright_purple = '#df73ff',
+  green = '#8fb573',
+  orange = '#ff9966',
+  blue = '#57a5e5',
+  light_blue = '#96c7ef',
+  yellow = '#dbb651',
+  cyan = '#70c2be',
+  red = '#e75a7c',
+  coral = '#f08080',
+  grey = '#5b5e5a',
+  light_grey = '#838781',
+  diff_add = '#40531b',
+  diff_delete = '#893f45',
+  diff_change = '#2a3a57',
+  diff_text = '#3a4a67',
 
-local function select_colors()
-  local selected = { none = 'none' }
-  selected =
-    vim.tbl_extend('force', selected, colors[vim.g.bamboo_config.style])
-  selected = vim.tbl_extend('force', selected, vim.g.bamboo_config.colors)
-  return selected
-end
+  de_contrast      = '#ffffff',
+  de_inverse       = '#000000',
+  de_bg0           = '#333333',  -- Normal 背景
+  de_bg1           = '#4d4d4d',
+  de_bg2           = '#666666',
+  de_bg3           = '#7f7f8c',
+  de_bg4           = '#6b8e24',
+  de_bg5           = '#bdb76b',
+  de_bg_d          = '#1e222a',  -- 自定义 dim 背景
+  de_bg_blue       = '#75a0ff',
+  de_bg_yellow     = '#f0e68c',
 
-return select_colors()
+  de_fg            = '#ffffff',  -- Normal 前景
+  de_red           = '#ff0000',
+  de_green         = '#89fb98',
+  de_yellow        = '#f0e68c',
+  de_blue          = '#6dceeb',
+  de_purple        = '#e2c792',  -- 某些主题用作 magenta
+  de_bright_purple = '#ffde9b',
+  de_orange        = '#cd5c5c',
+  de_cyan          = '#ffa0a0',
+  de_coral         = '#c05050',
+
+  de_grey          = '#7f7f8c',
+  de_light_grey    = '#c2bfa5',
+
+  de_diff_add      = '#5f875f',
+  de_diff_change   = '#5f87af',
+  de_diff_delete   = '#af5faf',
+  de_diff_text     = '#c6c6c6',
+
+}
