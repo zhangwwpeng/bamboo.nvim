@@ -31,7 +31,7 @@ return {
     de_bg0 = '#333333', -- Normal 背景
     de_bg1 = '#4d4d4d',
     de_bg2 = '#666666',
-    de_bg3 = '#7f7f8c',
+    de_bg3 = '#6f9f6f',
     de_bg4 = '#6b8e24',
     de_bg5 = '#bdb76b',
     de_bg_d = '#1e222a', -- 自定义 dim 背景
