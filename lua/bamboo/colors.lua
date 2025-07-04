@@ -26,35 +26,35 @@ return {
   diff_change = '#2a3a57',
   diff_text = '#3a4a67',
 
-  de_contrast      = '#ffffff',
-  de_inverse       = '#000000',
-  de_bg0           = '#333333',  -- Normal 背景
-  de_bg1           = '#4d4d4d',
-  de_bg2           = '#666666',
-  de_bg3           = '#7f7f8c',
-  de_bg4           = '#6b8e24',
-  de_bg5           = '#bdb76b',
-  de_bg_d          = '#1e222a',  -- 自定义 dim 背景
-  de_bg_blue       = '#75a0ff',
-  de_bg_yellow     = '#f0e68c',
+  de_contrast = '#ffffff',
+  de_inverse = '#000000',
+  de_bg0 = '#333333', -- Normal 背景
+  de_bg1 = '#4d4d4d',
+  de_bg2 = '#666666',
+  de_bg3 = '#7f7f8c',
+  de_bg4 = '#6b8e24',
+  de_bg5 = '#bdb76b',
+  de_bg_d = '#1e222a', -- 自定义 dim 背景
+  de_bg_blue = '#75a0ff',
+  de_bg_yellow = '#f0e68c',
 
-  de_fg            = '#ffffff',  -- Normal 前景
-  de_red           = '#ff0000',
-  de_green         = '#89fb98',
-  de_yellow        = '#f0e68c',
-  de_blue          = '#6dceeb',
-  de_purple        = '#e2c792',  -- 某些主题用作 magenta
+  de_fg = '#ffffff', -- Normal 前景
+  de_red = '#ff0000',
+  de_green = '#89fb98',
+  de_yellow = '#f0e68c',
+  de_blue = '#6dceeb',
+  de_purple = '#e2c792', -- 某些主题用作 magenta
   de_bright_purple = '#ffde9b',
-  de_orange        = '#cd5c5c',
-  de_cyan          = '#ffa0a0',
-  de_coral         = '#c05050',
+  de_orange = '#cd5c5c',
+  de_cyan = '#ffa0a0',
+  de_coral = '#c05050',
 
-  de_grey          = '#7f7f8c',
-  de_light_grey    = '#c2bfa5',
+  de_grey = '#7f7f8c',
+  de_light_grey = '#c2bfa5',
 
-  de_diff_add      = '#5f875f',
-  de_diff_change   = '#5f87af',
-  de_diff_delete   = '#af5faf',
-  de_diff_text     = '#c6c6c6',
-
+  de_diff_add = '#5f875f',
+  de_diff_change = '#5f87af',
+  de_diff_delete = '#af5faf',
+  de_diff_text = '#c6c6c6',
 }
+
