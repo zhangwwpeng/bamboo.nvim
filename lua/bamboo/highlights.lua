@@ -103,7 +103,7 @@ hl.common = {
     Substitute = { fg = c.de_bg0, bg = c.de_green },
     MatchParen = { fg = c.de_bg3, bg = c.de_bg5, bold = true },
     ModeMsg = { fg = rainbows.cyan, bold = true },
-    NonText = { fg = c.de_light_grey, bg = c.none },
+    NonText = { fg = c.de_bg1, bg = c.none },
     Whitespace = { link = 'NonText' },
     SpecialKey = { link = 'NonText' },
     Pmenu = { fg = c.de_fg, bg = c.de_bg2 },
