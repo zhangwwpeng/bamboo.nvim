@@ -147,7 +147,7 @@ hl.common = {
 }
 
 hl.syntax = {
-    String = vim.tbl_extend('force', { fg = c.green }, cfg.code_style.strings),
+    String = { fg = c.de_green },
     Constant = colors.Orange,
     Character = { link = 'Constant' },
     Number = { link = 'Constant' },
@@ -156,50 +156,29 @@ hl.syntax = {
     Type = colors.Yellow,
     Typedef = { link = 'Type' },
     Structure = { link = 'Type' },
-    StorageClass = { fg = c.yellow, italic = true },
-    Identifier = vim.tbl_extend(
-        'force',
-        { fg = c.red },
-        cfg.code_style.variables
-    ),
+    StorageClass = { fg = c.de_yellow, italic = true },
+    Identifier = { fg = c.de_red },
     PreProc = colors.Purple,
     PreCondit = { link = 'PreProc' },
     Include = { link = 'PreProc' },
     Define = { link = 'PreProc' },
-    Keyword = vim.tbl_extend(
-        'force',
-        { fg = c.purple },
-        cfg.code_style.keywords
-    ),
+    Keyword = { fg = c.de_yellow },
     Exception = { link = 'Keyword' },
-    Conditional = vim.tbl_extend(
-        'force',
-        { fg = c.purple },
-        cfg.code_style.conditionals
-    ),
+    Conditional = { fg = c.de_purple },
     Repeat = { link = 'Keyword' },
     Statement = colors.Purple,
-    Macro = { fg = c.bright_purple },
+    Macro = { fg = c.de_bright_purple },
     Error = colors.Red,
-    Label = { fg = c.red, bold = true },
+    Label = { fg = c.de_red, bold = true },
     Special = colors.Red,
     SpecialChar = { link = 'Special' },
-    Function = vim.tbl_extend(
-        'force',
-        { fg = c.blue },
-        cfg.code_style.functions
-    ),
-    Operator = { fg = light_purple },
+    Function = { fg = c.de_blue },
+    Operator = { fg = c.de_light_grey },
     Tag = colors.Blue,
     Delimiter = colors.LightGrey,
-    Comment = vim.tbl_extend(
-        'force',
-        { fg = c.de_blue },
-        cfg.code_style.comments
-    ),
+    Comment = { fg = c.de_blue },
     SpecialComment = { link = 'Comment' },
     Todo = { fg = c.de_red, bg = c.de_purple, bold = true },
-
     Underlined = { underline = true },
     Bold = { bold = true },
     Italic = { italic = true },
@@ -212,11 +191,7 @@ hl.treesitter = {
     ['@boolean'] = { link = 'Boolean' },
     ['@character'] = { link = 'Character' },
     ['@character.special'] = { link = 'Special' },
-    ['@comment'] = vim.tbl_extend(
-        'force',
-        { fg = c.de_blue },
-        cfg.code_style.comments
-    ),
+    ['@comment'] = { link = 'Comment' },
     ['@comment.error'] = { fg = c.contrast, bg = c.red, bold = true },
     ['@comment.note'] = { fg = c.contrast, bg = c.blue, bold = true },
     ['@comment.todo'] = { link = 'Todo' },
@@ -235,17 +210,9 @@ hl.treesitter = {
     ['@diff.plus'] = { link = 'DiffAdd' },
     ['@error'] = { link = 'Error' },
     ['@function'] = { link = 'Function' },
-    ['@function.builtin'] = vim.tbl_extend(
-        'force',
-        { fg = c.orange },
-        cfg.code_style.functions
-    ),
+    ['@function.builtin'] = { fg = c.orange },
     ['@function.call'] = { link = 'Function' },
-    ['@function.macro'] = vim.tbl_extend(
-        'force',
-        { fg = c.bright_purple },
-        cfg.code_style.functions
-    ),
+    ['@function.macro'] = { fg = c.bright_purple },
     ['@function.method'] = { link = 'Function' },
     ['@function.method.call'] = { link = 'Function' },
     ['@keyword'] = { link = 'Keyword' },
@@ -285,17 +252,9 @@ hl.treesitter = {
     ['@markup.strikethrough'] = { link = 'markdownStrike' },
     ['@markup.strong'] = { link = 'markdownBold' },
     ['@markup.underline'] = { link = 'htmlUnderline' },
-    ['@module'] = vim.tbl_extend(
-        'force',
-        { fg = c.light_blue },
-        cfg.code_style.namespaces
-    ),
+    ['@module'] = { fg = c.light_blue },
     ['@module.builtin'] = { link = '@variable.builtin' },
-    ['@module.latex'] = vim.tbl_extend(
-        'force',
-        colors.Cyan,
-        cfg.code_style.namespaces
-    ),
+    ['@module.latex'] = colors.Cyan,
     ['@number'] = { link = 'Number' },
     ['@number.float'] = { link = 'Float' },
     ['@operator'] = { link = 'Operator' },
@@ -320,27 +279,11 @@ hl.treesitter = {
     ['@type'] = { link = 'Type' },
     ['@type.builtin'] = { link = 'Type' },
     ['@type.definition'] = { link = 'Type' },
-    ['@variable'] = vim.tbl_extend(
-        'force',
-        { fg = c.fg },
-        cfg.code_style.variables
-    ),
-    ['@variable.builtin'] = vim.tbl_extend(
-        'force',
-        { fg = c.red },
-        cfg.code_style.variables
-    ),
+    ['@variable'] = { fg = c.fg },
+    ['@variable.builtin'] = { fg = c.red },
     ['@variable.member'] = colors.Cyan,
-    ['@variable.parameter'] = vim.tbl_extend(
-        'force',
-        { fg = c.coral },
-        cfg.code_style.parameters
-    ),
-    ['@variable.parameter.builtin'] = vim.tbl_extend(
-        'force',
-        { fg = c.red },
-        cfg.code_style.parameters
-    ),
+    ['@variable.parameter'] = { fg = c.coral },
+    ['@variable.parameter.builtin'] = { fg = c.red },
 }
 
 hl.lsp = {
